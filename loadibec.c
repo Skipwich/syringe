@@ -31,7 +31,7 @@
 #define COMMIT_STRING ""
 #endif
 
-#define LOADIBEC_VERSION "2.00"
+#define LOADIBEC_VERSION "2.00 MC"
 
 void print_progress(double progress) {
 	int i = 0;
@@ -101,7 +101,7 @@ int main(int argc, char* argv[]) {
 
 	if(client->mode == kDfuMode && can_ra1n)
 	{
-		printf("linera1n compatible device detected, injecting limera1n.\n");
+		printf("steaks4uce compatible device detected, injecting steaks4uce.\n");
 		irecv_close(client);
 		irecv_exit();
 
@@ -120,7 +120,7 @@ int main(int argc, char* argv[]) {
 		irecv_close(client);
 		client = NULL;
 
-		printf("limera1ned, reconnecting...\n");
+		printf("steaks4uced, reconnecting...\n");
 
 		client = irecv_reconnect(client, 10);
 		if(!client)

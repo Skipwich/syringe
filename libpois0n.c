@@ -888,8 +888,8 @@ int pois0n_inject() {
 	// Send iBSS
 	debug("Preparing to upload iBSS\n");
 	if(upload_ibss() < 0) {
-		//error("Unable to upload iBSS\n");
-		//return -1;
+		error("Unable to upload iBSS\n");
+		return -1;
 	}
 
 	debug("Reconnecting to device\n");

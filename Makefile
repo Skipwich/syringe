@@ -8,7 +8,7 @@ BIN2C = bin2c
 ADDOBJ = 
 LDFLAGS = -L.
 GIT_COMMIT = $(shell git log | head -n1 | cut -b8-14)
-CFLAGS = -DCOMMIT="$(GIT_COMMIT)"
+CFLAGS = -DCOMMIT="$(GIT_COMMIT)" -g
 
 UNAME := $(shell uname -s)
 ifeq ($(UNAME),Darwin)

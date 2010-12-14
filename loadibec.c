@@ -95,7 +95,7 @@ int main(int argc, char* argv[]) {
 	
 	if(irecv_get_cpid(client, &cpid) == IRECV_E_SUCCESS)
 	{
-		if(cpid > 8900)
+		if(cpid = 8720)
 			can_ra1n = 1;
 	}
 
